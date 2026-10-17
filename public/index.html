@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyTok AI PRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>⚡ SkyTok <span>AI PRO</span></h1>
+    <p>Laboratorium analisis video AI</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>🎬 Analisis Video Kamu</h2>
+      <p>Upload video untuk mendapatkan analisis dan simulasi komentar penonton.</p>
+
+      <label for="video">Pilih video</label>
+      <input type="file" id="video" accept="video/*">
+
+      <video id="preview" controls hidden></video>
+
+      <label for="caption">Caption video (opsional)</label>
+      <textarea id="caption" placeholder="Tulis caption video kamu..."></textarea>
+
+      <label for="jumlah">Jumlah komentar simulasi</label>
+      <select id="jumlah">
+        <option value="20">20 komentar</option>
+        <option value="50">50 komentar</option>
+        <option value="100">100 komentar</option>
+      </select>
+
+      <button id="analisis">🚀 Analisis Sekarang</button>
+      <p id="status">Siap menganalisis video kamu.</p>
+    </section>
+
+    <section id="hasil" class="card" hidden>
+      <h2>📊 Hasil Analisis</h2>
+      <div id="ringkasan"></div>
+      <h3>💬 Simulasi Komentar</h3>
+      <div id="komentar"></div>
+    </section>
+
+    <p class="catatan">
+      Catatan: komentar yang dihasilkan merupakan simulasi AI,
+      bukan komentar asli dari pengguna media sosial.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  </html>
